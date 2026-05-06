@@ -8,13 +8,7 @@ body {
 }
 
 /* Layering Styles */
-.hero-frame {
-    position: relative;
-    width: 100%;
-    max-width: 481px;
-    margin: 0 auto;
-    min-height: 420px;
-}
+
 
 .hero-bg-layer {
     width: 100%;
