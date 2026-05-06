@@ -422,7 +422,31 @@ left: 42.88px;
     display: block;
 }
 /*==================================================== */
-
+                         /* ABOUT SECTION */
+.about-section {
+    width: 100%;
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding: 60px 0%;
+    box-sizing: border-box;
+}
+.about-image-container {
+    width: 100%;
+    display: block;
+}
+.about-section img {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+}
+/* RESPONSIVENESS */
+@media (max-width: 991px) {
+    .about-section {
+        padding: 40px 15px;
+    }
+}
 /* Base container and typography styling */
 .certo-section {
     background: linear-gradient(90deg, #2b3fd6, #6366f1);
