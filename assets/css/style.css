@@ -269,16 +269,16 @@ body, html {
 
 /* Equal Button Sizing (Same width and height for both) */
 .btn-equal {
-    width: 220px;            /* Fixed width */
-    height: 48px;            /* Fixed height */
-    padding: 12px 16px;      /* Identical padding */
+    width: 220px;           
+    height: 48px;            
+    padding: 12px 16px;      
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;  /* Ensures borders and padding don't alter dimensions */
+    box-sizing: border-box;  
     transition: all 0.3s ease;
 }
 
@@ -439,8 +439,8 @@ body, html {
 .insights-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin-bottom: 60px;
+    gap: 40px;
+    margin-bottom: 65px;
 }
 
 /* Individual Card Styling */
