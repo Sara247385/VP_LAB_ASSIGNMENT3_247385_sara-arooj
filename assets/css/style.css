@@ -11,7 +11,7 @@ body {
 .hero-frame {
     position: relative;
     width: 100%;
-    max-width: 480px;
+    max-width: 481px;
     margin: 0 auto;
     min-height: 420px;
 }
