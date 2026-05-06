@@ -63,46 +63,6 @@ body {
     height: auto;
 }
 
-.hero-phone-layer:hover {
-    transform: translateY(-55%); /* Hover par halka sa upar move hoga */
-}
-
-/* Custom Buttons Styling */
-.btn-certo-yellow {
-    background-color: #ffc107 !important;
-    color: #212529 !important;
-    border: none;
-    transition: all 0.3s ease;
-    align-items: center;
-    padding-left:21px;
-}
-
-.btn-certo-yellow:hover {
-    background-color: #e0a800 !important;
-}
-
-.btn-outline-android {
-    color: #212529 !important;
-    border: 2px solid #212529 !important;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-android:hover {
-    background-color: #212529 !important;
-    color: #ffffff !important;
-}
-
-.btn-primary-certo {
-    background-color: #4f46e5 !important;
-    color: #ffffff !important;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.btn-primary-certo:hover {
-    background-color: #4338ca !important;
-}
-
 /*======================================================
    Security Section Custom CSS
 ======================================================*/
