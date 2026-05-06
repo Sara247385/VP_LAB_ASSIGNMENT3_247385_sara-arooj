@@ -735,7 +735,7 @@ body, html {
 @media (max-width: 1024px) {
     .footer-container {
         flex-direction: column;
-        gap: 60px;
+        gap: 62px;
     }
     .social-icons img {
         width: 100%;
