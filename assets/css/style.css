@@ -1,83 +1,184 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc !important;
+/* DESIGN VARIABLES */
+:root {
+    --primary-blue: #444BD3;
+    --dark-navy: #02033B;
+    --bright-yellow: #FFC247;
+    --bg-light-blue: #F3F7FF;
+    --text-muted: #4A4B65;
+    --font-main: 'Figtree', sans-serif;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+                       /* NAVBAR */
+.navbar-image-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
-.navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+.navbar-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  
+  .btn-primary-certo {
+    background-color: var(--certo-blue);
+    color: white !important;
+    border-radius: 50px;
+    padding: 8px 25px;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .btn-certo-yellow {
+    background-color: var(--certo-yellow);
+    color: var(--certo-dark-blue);
+    border-radius: 50px;
+    padding: 17px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 3px solid var(--certo-dark-blue);
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .btn-outline-android {
+    border: 3px solid var(--certo-dark-blue);
+    background: transparent;
+    color: var(--certo-dark-blue);
+    border-radius: 50px;
+    padding: 17px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+  }
+.hero-title {
+font-weight: 700;
+font-style: Extra Bold;
+font-size: 60px;
+line-height: 75px;
+letter-spacing: -1.2px;
+vertical-align: middle;
+margin-bottom: 40px;
+color: var(--dark-navy);
+max-width: 600px;
+width: 100%;
+  
+}
+.hero-subtitle {
+font-size: 1.25rem;
+color: var(--text-muted);
+width: 597.8875122070312px;
+height: 82px;
+margin-bottom: 70px;
+top: 4px;
+}
+                        /* BUTTONS */
+.btn-yellow {
+    background-color: var(--bright-yellow);
+    color: var(--dark-navy);
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
 }
 
-/* Layering Styles */
-.hero-frame {
+.btn-outline-navy {
+    border: 2px solid var(--dark-navy);
+    color: var(--dark-navy);
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+                       /* HERO SECTION */
+.hero-section {
+    background-color: rgba(243, 248, 255, 1);
+   padding-top: 45px;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.hero-text-area {
+    padding: 40px 5%; 
+    display: flex;
+    align-items: center; 
+
+}
+.hero-visual-area {
     position: relative;
-    width: 100%;
-    max-width: 481px;
-    margin: 0 auto;
-    min-height: 421px;
+    overflow: hidden; 
+    min-height: 508px;
+     border-top: 12px solid var(--primary-blue);
+     height: 100%;
 }
+.hero-bg-tinted {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 
-.hero-bg-layer {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-    border: 4px solid #4f46e5;
-    border-radius: 12px;
 }
-
-.hero-phone-layer {
-   
+.hero-person-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.hero-phone-overlay {
     position: absolute;
     top: 50%;
-    left: 15%; 
-    transform: translateY(-50%);
-    
-    width: 45%; 
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
+    left: 9%; 
+    transform: translateY(-50%); 
+    z-index: 10;
+    width: 240px; 
+}
+.mockup-img {
+    width: 100%;
+    border-radius: 35px;
+}
+/* RESPONSIVENESS */
+.hero-text-area {
+  padding: 40px 5%;
 }
 
-.hero-phone-layer:hover {
-    transform: translateY(-55%); 
-}
-/* Custom Buttons Styling */
-.btn-certo-yellow {
-    background-color: #ffc107 !important;
-    color: #212529 !important;
-    border: none;
-    transition: all 0.3s ease;
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
-    padding-left:20px;
+  }
 }
-
-.btn-certo-yellow:hover {
-    background-color: #e0a800 !important;
-}
-
-.btn-outline-android {
-    color: #212529 !important;
-    border: 2px solid #212529 !important;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-android:hover {
-    background-color: #212529 !important;
-    color: #ffffff !important;
-}
-
-.btn-primary-certo {
-    background-color: #4f46e5 !important;
-    color: #ffffff !important;
-    border: none;
-    transition: all 0.4s ease;
-}
-
-.btn-primary-certo:hover {
-    background-color: #4338ca !important;
-}
-
 /*======================================================
    Security Section Custom CSS
 ======================================================*/
