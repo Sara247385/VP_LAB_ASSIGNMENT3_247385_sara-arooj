@@ -526,7 +526,7 @@ body, html {
     font-weight: 700;
     text-decoration: none;
     padding: 14px 40px;
-    border-radius: 50px;
+    border-radius: 51px;
     transition: background-color 0.25s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(252, 163, 17, 0.2);
 }
