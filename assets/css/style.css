@@ -1,66 +1,81 @@
-/* General Styling */
 body {
-    font-family: Arial, sans-serif; /* Example font */
-    color: #333; /* Base text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc !important;
 }
 
-/* Nav Bar */
 .navbar {
-    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.btn-primary-certo {
-    background-color: #5841D8; /* Certo's primary purple */
-    color: white !important;
-}
-
-/* Hero Section */
-.hero-section .row {
-    border-color: #FBBA00 !important; /* Certo's primary yellow */
-}
-
-.hero-left-inner h1 {
-    color: #2D2D2D; /* Darker text for title */
-}
-
-.hero-ctas .btn-certo-yellow {
-    background-color: #FBBA00;
-    color: white !important;
-}
-
-.hero-ctas .btn-outline-android {
-    border-color: #333;
-    color: #333;
-}
-
-/* Updated Image Frame for Second Image */
+/* Layering Styles */
 .hero-frame {
-    /* Set dimensions based on the second image */
-    width: 100%; 
-    max-width: 500px; /* Adjust as needed */
-    height: auto; 
-    overflow: hidden; /* For clipping if necessary */
-    border-radius: 20px; /* Example border radius */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
-    position: relative; /* Maintain position context */
+    position: relative;
+    width: 100%;
+    max-width: 481px;
+    margin: 0 auto;
+    min-height: 420px;
 }
 
 .hero-bg-layer {
-    /* For the image that replaces 'div-1.png' */
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover */
-    display: block; /* Avoid unwanted gaps */
+    height: 100%; 
+    object-fit: cover;
+    border: 4px solid #4f46e5;
+    border-radius: 12px;
 }
 
-/* Adjustments for Phone Placement over Background */
 .hero-phone-layer {
+   
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* For precise centering */
-    max-width: 80%; /* Adjust size relative to the background */
+    top: 50%;
+    left: 15%; 
+    transform: translateY(-50%);
+    
+    width: 45%; 
     height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
+}
+
+.hero-phone-layer:hover {
+    transform: translateY(-55%); 
+}
+/* Custom Buttons Styling */
+.btn-certo-yellow {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+    border: none;
+    transition: all 0.3s ease;
+    align-items: center;
+    padding-left:20px;
+}
+
+.btn-certo-yellow:hover {
+    background-color: #e0a800 !important;
+}
+
+.btn-outline-android {
+    color: #212529 !important;
+    border: 2px solid #212529 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-android:hover {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary-certo {
+    background-color: #4f46e5 !important;
+    color: #ffffff !important;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.btn-primary-certo:hover {
+    background-color: #4338ca !important;
 }
 
 /*======================================================
