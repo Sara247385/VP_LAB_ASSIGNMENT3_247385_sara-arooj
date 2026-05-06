@@ -315,155 +315,117 @@ display: block;
         align-items:center;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-
-/*==================================================== */
-.testimonial-section {
-    background-color: #FFC247;
-    padding: 80px 0;
-    overflow: hidden;
-}
-
-.section-title {
-    font-family: 'Figtree', sans-serif;
-    font-weight: 800;
-    font-size: 48px; 
-    line-height: 1.2;
-    color: var(--dark-navy);
-    margin-left: 0;
-    padding-right: 0;
-    position: static; 
-    width: auto;
-    text-align: left !important;
-    padding-left: 0 !important;
-    margin-left: 0;
-}
-.review-scroll-container {
-    padding: 20px 0 40px;
-    overflow-x: auto;
-    scrollbar-width: none; 
-}
-
-.review-track {
-  display: flex;
-    gap: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* REVIEW CARDS */
-.review-card {
-    background: #fff;
-    min-width: 350px;
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-}
-
-.stars {
-    color: #FFC247;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.review-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--dark-navy);
-    flex-grow: 1;
-    margin-bottom: 20px;
-}
-
-.reviewer-name {
-    font-weight: 800;
-    font-size: 1rem;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
-/* BRAND LOGOS AREA */
-.featured-text {
-    color:  rgba(2, 3, 59, 1);
-    width: 129px;
-height: 30px;
-top: 31.5px;
-
-    margin-right: 20px;
-    font-family: Inter;
-font-weight: 800;
-font-style: Extra Bold;
-font-size: 23px;
-line-height: 30px;
-letter-spacing: -0.48px;
-vertical-align: middle;
-width: 129;
-height: 30;
-top: 31.5px;
-
+:root {
+    --dark-navy: #060a24;
+    --primary-blue: #2b3fd6;
+    --accent-yellow: #fca311;
 }
 
-.brand-img {
-    width: 130px;
-height: 95px;
-left: 42.88px;
-    transition: 0.3s;
+body {
+    background-color: #f8fafc;
+    min-height: 100vh;
 }
-/* RESPONSIVENESS */
-@media (max-width: 1400px) {
-    .review-track {
-        padding-left: 5%;
-    }
-    .section-title {
-        font-size: 36px;
-    }
-}
-.testimonial-section .container .section-title {
-    text-align: left !important;
+
+/* 1. Info Section Styling */
+.info-section {
     width: 100%;
-    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
 }
-/*==================================================== */
-            /* STORY & HELP SECTION */
-.story-help-section {
-    background-color: #FFFFFF !important; 
-    padding: 100px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.story-card-wrapper {
-    background: linear-gradient(145deg, #FFC148 0%, #FFB01C 100%);
-    border-radius: 45px;      
-    width: 100%;
-    max-width: 460px;               
-    min-height: 290px;            
-    padding: 50px;
+
+.info-section .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 540px;
+    background: #f2f0eb;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 38px 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+.info-card.yellow-card {
+    background: linear-gradient(135deg, #fbc04a 0%, #fca311 100%) !important;
+    border: none !important;
+}
+.story-card {
+    background: linear-gradient(135deg, #fbc256 0%, #f0893a 100%);
     border: none;
 }
 
-.story-card-wrapper h3 {
-    color: #02033B;
-    font-weight: 800;
-    font-size: 1.85rem;
-    margin-bottom: 18px;
+.story-card h2, .help-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
 }
 
-.story-card-wrapper p {
-    color: #02033B;
-    font-size: 1.05rem;
-    line-height: 1.4;
-    margin-bottom: 30px;
-    max-width: 310px;
+.story-card p, .help-card p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 32px;
 }
-/* Base container and typography styling */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-filled {
+    background-color: #422afb;
+    color: #220f90;
+}
+
+.btn-filled i {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.btn-filled:hover {
+    background-color: #311cb9;
+}
+
+.btn-outline {
+    border: 2px solid #0B0F33;
+    color: #0B0F33;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #0B0F33;
+    color: #ffffff;
+}
+
+/* 2. Certo Call to Action Section */
 .certo-section {
     background: linear-gradient(90deg, #2b3fd6, #6366f1);
     padding: 80px 20px;
     text-align: center;
     color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .certo-container {
@@ -484,7 +446,6 @@ left: 42.88px;
     margin-bottom: 40px;
 }
 
-/* Button Group */
 .certo-buttons {
     display: flex;
     justify-content: center;
@@ -492,8 +453,7 @@ left: 42.88px;
     gap: 24px;
 }
 
-/* Button Styles */
-.btn {
+.btn-certo {
     display: inline-flex;
     align-items: center;
     padding: 14px 32px;
@@ -523,38 +483,78 @@ left: 42.88px;
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.arrow {
+.certo-section .arrow {
     margin-left: 8px;
 }
 
-/* Responsive Styles */
-@media (max-width: 640px) {
-    .certo-buttons {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .certo-section h2 {
-        font-size: 1.8rem;
-    }
-    
-    .certo-section p {
-        margin-bottom: 28px;
-    }
-
-    .btn {
-        width: 80%;
-        justify-content: center;
-    }
+/* 3. Testimonial Section */
+.testimonial-section {
+    background-color: #FFC247;
+    padding: 80px 0;
+    overflow: hidden;
 }
 
-/*==================================================== */
+.testimonial-section .container-testimonial {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-/* Base styles for the section */
+.testimonial-section .section-title {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    font-size: 48px; 
+    line-height: 1.2;
+    color: #060a24;
+    text-align: left !important;
+    margin-bottom: 40px;
+}
+
+.review-scroll-container {
+    padding: 20px 0 40px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+}
+
+.review-track {
+    display: flex;
+    gap: 25px;
+}
+
+.review-card {
+    background: #fff;
+    min-width: 350px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.stars {
+    color: #FFC247;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #060a24;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.reviewer-name {
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* 4. Latest Insights Section */
 .latest-insights {
     background-color: #f4f7fa;
     padding: 80px 20px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: #0b0f19;
 }
 
@@ -571,7 +571,6 @@ left: 42.88px;
     margin-bottom: 60px;
 }
 
-/* Grid Layout for Cards */
 .insights-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -579,7 +578,6 @@ left: 42.88px;
     margin-bottom: 65px;
 }
 
-/* Individual Card Styling */
 .insight-card {
     background-color: #ffffff;
     border-radius: 24px;
@@ -609,8 +607,6 @@ left: 42.88px;
     border-top-right-radius: 24px;
 }
 
-
-/* Pill Badge */
 .badge {
     position: absolute;
     top: 20px;
@@ -624,7 +620,6 @@ left: 42.88px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Text Content */
 .insight-content {
     padding: 32px 28px;
     flex-grow: 1;
@@ -648,7 +643,6 @@ left: 42.88px;
     margin-bottom: 0;
 }
 
-/* Call to Action Button */
 .cta-container {
     text-align: center;
 }
@@ -672,26 +666,10 @@ left: 42.88px;
     transform: translateY(-2px);
 }
 
-.arrow {
-    margin-left: 10px;
-    font-weight: normal;
-}
-
-/* Responsive Breakpoint */
-@media (max-width: 1024px) {
-    .insights-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-/*==================================================== */
-/* Base Footer Styling */
+/* 5. Site Footer */
 .site-footer {
     background-color: #060a24;
     color: #ffffff;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     padding: 80px 40px 40px 40px;
 }
 
@@ -704,12 +682,10 @@ left: 42.88px;
     margin-bottom: 80px;
 }
 
-/* Footer Columns */
 .footer-column {
     flex: 1;
 }
 
-/* Left Column */
 .left-col h2 {
     font-size: 2.5rem;
     font-weight: 800;
@@ -719,12 +695,6 @@ left: 42.88px;
 
 .social-icons {
     margin-bottom: 32px;
-}
-
-.social-icons img {
-    width: 348px;
-    height: 72px;
-    object-fit: contain;
 }
 
 .legal-links a {
@@ -751,7 +721,6 @@ left: 42.88px;
     text-decoration: underline;
 }
 
-/* Middle Column */
 .middle-col h3 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -788,7 +757,6 @@ left: 42.88px;
     color: #ffcd3a;
 }
 
-/* Right Column */
 .right-col {
     display: flex;
     flex-direction: column;
@@ -857,7 +825,6 @@ left: 42.88px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Disclaimer */
 .footer-disclaimer {
     max-width: 1200px;
     margin: 0 auto;
@@ -868,14 +835,22 @@ left: 42.88px;
     padding-top: 33px;
 }
 
-/* Responsiveness */
+/* Responsive Breakpoints */
 @media (max-width: 1024px) {
+    .insights-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .footer-container {
         flex-direction: column;
         gap: 61px;
     }
-    .social-icons img {
-        width: 100%;
-        max-width: 349px;
+    
+    .info-section .container {
+        flex-direction: column;
+        gap: 40px;
     }
 }
