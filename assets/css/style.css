@@ -539,6 +539,39 @@ left: 42.88px;
 }
 
 /*==================================================== */
+          /* STORY & HELP SECTION */
+.story-help-section {
+    background-color: #FFFFFF !important; 
+    padding: 100px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.story-card-wrapper {
+    background: linear-gradient(145deg, #FFC148 0%, #FFB01C 100%);
+    border-radius: 45px;      
+    width: 100%;
+    max-width: 460px;               
+    min-height: 290px;            
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.story-card-wrapper h3 {
+    color: #02033B;
+    font-weight: 800;
+    font-size: 1.85rem;
+    margin-bottom: 18px;
+}
+
+.story-card-wrapper p {
+    color: #02033B;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    max-width: 310px;
+}
 /* Base styles for the section */
 .latest-insights {
     background-color: #f4f7fa;
