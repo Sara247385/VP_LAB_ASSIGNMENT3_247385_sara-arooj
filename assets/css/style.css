@@ -415,9 +415,9 @@ body {
     background-color: #311cb9;
 }
 .btn-custom-outline {
-    background-color: #ffffff !important; /* Button ke andar ka hissa white */
-    border: 2px solid #050729 !important;  /* Dark navy border */
-    color: #050729 !important;            /* Text color dark navy */
+    background-color: #ffffff !important; 
+    border: 2px solid #050729 !important;  
+    color: #050729 !important;            
 }
 .btn-outline {
     border: 2px solid #0B0F33;
