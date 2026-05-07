@@ -274,7 +274,7 @@ display: block;
 }
 
 .btn-certo-yellow:hover {
-    background: #ffb703;
+    background: #FFC247;
     transform: translateY(-2px);
 }
 
@@ -362,7 +362,7 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 .info-card.yellow-card {
-    background: linear-gradient(135deg, #fbc04a 0%, #fca311 100%) !important;
+    background: linear-gradient(135deg, #FFC247 0%, #FFC247 100%) !important;
     border: none !important;
 }
 .story-card {
@@ -393,11 +393,17 @@ body {
     padding: 12px 28px;
     border-radius: 30px;
     transition: all 0.2s ease-in-out;
+    color: #0d0a1c;
+}
+.btn-custom-primary {
+    background-color: #4A3AFF !important; /* Image wala bright blue */
+    border: none;
+    color: #ffffff !important; /* Note: Image mein text white hai, isliye white rakha hai */
 }
 
 .btn-filled {
-    background-color: #422afb;
-    color: #220f90;
+    background-color: #361df1;
+    color: #3a20cf;
 }
 
 .btn-filled i {
@@ -408,7 +414,11 @@ body {
 .btn-filled:hover {
     background-color: #311cb9;
 }
-
+.btn-custom-outline {
+    background-color: #ffffff !important; /* Button ke andar ka hissa white */
+    border: 2px solid #050729 !important;  /* Dark navy border */
+    color: #050729 !important;            /* Text color dark navy */
+}
 .btn-outline {
     border: 2px solid #0B0F33;
     color: #0B0F33;
