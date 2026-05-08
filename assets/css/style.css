@@ -346,7 +346,7 @@ body {
 .info-section .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 32px;
     flex-wrap: wrap; 
 }
@@ -396,9 +396,9 @@ body {
     color: #0d0a1c;
 }
 .btn-custom-primary {
-    background-color: #4A3AFF !important; /* Image wala bright blue */
+    background-color: #4A3AFF !important; 
     border: none;
-    color: #ffffff !important; /* Note: Image mein text white hai, isliye white rakha hai */
+    color: #ffffff !important; 
 }
 
 .btn-filled {
